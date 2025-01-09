@@ -3,7 +3,18 @@ const app = express();
 const PORT = 4000;
 
 app.get('/', (req, res) => {
-    home = `Welcome to the BBtOW API!`;
+    home = `
+    <html>
+        <head>
+            <meta name="color-scheme" content="light dark">
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <pre>hi</pre>
+            <div class="json-formatter-container"></div>
+        </body>
+    </html>
+    `;
   
     res.send(home);
 });
