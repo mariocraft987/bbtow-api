@@ -3,7 +3,9 @@ const app = express();
 const PORT = 4000;
 
 app.get('/', (req, res) => {
-  res.status(200).json('Welcome to the BBtOW');
+    home = `Welcome to the BBtOW API!`;
+  
+    res.send(home);
 });
 
 app.listen(PORT, () => {
